@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#BECBCF "
+
+    android:orientation="vertical"
+    tools:context=".edit_bookstore">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="5dp"
+        android:background="#F8F8F8"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/closeAlertBookstore"
+            android:layout_width="40dp"
+            android:layout_height="43dp"
+            android:layout_gravity="right"
+            android:layout_margin="10sp"
+            android:background="@drawable/ic_baseline_close_24"
+            android:backgroundTint="@color/black"
+            tools:focusableInTouchMode="true"
+            tools:ignore="RtlHardcoded"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/owl128" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="1dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bookstoreId"
+                style="@android:style/Widget.Material.EditText"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginStart="242dp"
+                android:autofillHints="id"
+                android:clickable="false"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:flow_horizontalAlign="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_login"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text=" ID "
+                android:textAlignment="center"
+                android:textColor="#F4EDED"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.045"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.515"
+                tools:textAlignment="center"
+                tools:textSize="20sp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/bookstoreName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:autofillHints="NAME"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:inputType="textCapCharacters"
+                android:minHeight="48dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                app:flow_horizontalAlign="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="19dp"
+                android:background="@drawable/bluespin"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text=" ΒΙΒΛΙΟΠΩΛΕΙΟ "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:textAlignment="center" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEditBookstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:autofillHints="UPDATE"
+             android:text="ΑΠΟΘΗΚΕΥΣΗ"
+            android:textAlignment="center"
+            android:backgroundTint="#CB374155"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.blue_books.HomeFragment"
+        android:label="ΑΡΧΙΚΗ ΣΕΛΙΔΑ"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_client"
+            app:destination="@id/nav_dashb_ClientsFragment" />
+        <action
+            android:id="@+id/actionBook"
+            app:destination="@id/nav_dashb_BookFragment" />
+        <action
+            android:id="@+id/actionBookstore"
+            app:destination="@id/nav_dashb_BookstoreFragment" />
+        <action
+            android:id="@+id/actionBranch"
+            app:destination="@id/nav_dashb_BranchFragment" />
+        <action
+            android:id="@+id/actionFbitems"
+            app:destination="@id/nav_dashb_FbitemsFragment" />
+        <action
+            android:id="@+id/actionFbsales"
+            app:destination="@id/nav_dashb_SalesFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bookstore"
+        android:name="com.example.blue_books.BookstoreFragment"
+        android:label="@string/bookstore"
+        tools:layout="@layout/fragment_bookstore" />
+
+    <fragment
+        android:id="@+id/nav_branch"
+        android:name="com.example.blue_books.BranchFragment"
+        android:label="@string/branch"
+        tools:layout="@layout/fragment_branch" />
+
+    <fragment
+        android:id="@+id/nav_book"
+        android:name="com.example.blue_books.BookFragment"
+        android:label="@string/book"
+        tools:layout="@layout/fragment_book" />
+
+    <fragment
+        android:id="@+id/nav_FBClients"
+        android:name="com.example.blue_books.FB_ClientsFragment"
+        android:label="@string/menu_fbclients"
+        tools:layout="@layout/fragment_fb_clients" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_FBSales"
+        android:name="com.example.blue_books.FB_SalesFragment"
+        android:label="@string/menu_fbsales"
+        tools:layout="@layout/fragment_fb_clients" >
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_FBItems"
+        android:name="com.example.blue_books.FB_ItemsFragment"
+        android:label="@string/menu_fbitems"
+        tools:layout="@layout/fragment_fb_items" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_dashb_ClientsFragment"
+        android:name="com.example.blue_books.Dashb_ClientsFragment"
+        android:label="ΠΕΛΑΤΕΣ"
+        tools:layout="@layout/fragment_dashb__clients" />
+    <fragment
+        android:id="@+id/nav_dashb_BookFragment"
+        android:name="com.example.blue_books.Dashb_BookFragment"
+        android:label="ΒΙΒΛΙΑ ΔΙΑΝΟΜΗΣ"
+        tools:layout="@layout/fragment_dashb_book" />
+    <fragment
+        android:id="@+id/nav_dashb_BookstoreFragment"
+        android:name="com.example.blue_books.Dashb_BookstoreFragment"
+        android:label="ΒΙΒΛΙΟΠΩΛΕΙΑ"
+        tools:layout="@layout/fragment_dashb_boookstore" />
+    <fragment
+        android:id="@+id/nav_dashb_BranchFragment"
+        android:name="com.example.blue_books.Dashb_BranchFragment"
+        android:label="ΥΠΟΚΑΤΑΣΤΗΜΑΤΑ"
+        tools:layout="@layout/fragment_dashb_branch" />
+    <fragment
+        android:id="@+id/nav_dashb_FbitemsFragment"
+        android:name="com.example.blue_books.Dashb_FbitemsFragment"
+        android:label="ΒΙΒΛΙΑ ΠΡΟΣ ΠΩΛΗΣΗ"
+        tools:layout="@layout/fragment_dashb_fbitems" />
+    <fragment
+        android:id="@+id/nav_dashb_SalesFragment"
+        android:name="com.example.blue_books.Dashb_SalesFragment"
+        android:label="ΠΩΛΗΣΕΙΣ"
+        tools:layout="@layout/fragment_dashb_fbsales" />
+    <activity
+        android:id="@+id/edit_book"
+        android:name="com.example.blue_books.edit_book"
+        android:label="ΕΠΕΞΕΡΓΑΣΙΑ ΒΙΒΛΙΟΥ"
+        tools:layout="@layout/activity_edit_book" />
+    <activity
+        android:id="@+id/edit_bookstore"
+        android:name="com.example.blue_books.edit_bookstore"
+        android:label="ΕΠΕΞΕΡΓΑΣΙΑ ΒΙΒΛΙΟΠΩΛΕΙΟΥ"
+        tools:layout="@layout/activity_edit_bookstore" />
+    <activity
+        android:id="@+id/edit_branch"
+        android:name="com.example.blue_books.edit_branch"
+        android:label="ΕΠΕΞΕΡΓΑΣΙΑ ΥΠΟΚΑΤΑΣΤΗΜΑΤΟΣ"
+        tools:layout="@layout/activity_edit_branch" />
+    <activity
+        android:id="@+id/edit_fbclient"
+        android:name="com.example.blue_books.edit_fbclient"
+        android:label="ΕΠΕΞΕΡΓΑΣΙΑ ΠΕΛΑΤΗ"
+        tools:layout="@layout/activity_edit_fbclients" />
+    <activity
+        android:id="@+id/edit_fbitems"
+        android:name="com.example.blue_books.edit_fbitems"
+        android:label="ΕΠΕΞΕΡΓΑΣΙΑ ΒΙΒΛΙΟΥ"
+        tools:layout="@layout/activity_edit_fbitems" />
+    <activity
+        android:id="@+id/forgotPasswordActivity"
+        android:name="com.example.blue_books.ForgotPasswordActivity"
+        android:label="activity_forgot_password"
+        tools:layout="@layout/activity_forgot_password" />
+
+</navigation>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/touchInterceptor"
+    android:clickable="true"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED756959"
+    android:orientation="vertical"
+    tools:context="FB_ClientsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="#E6DBCE"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CompaniesEditTextid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.444">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CompaniesEditTextname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CompaniesEditTextafm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CompaniesEditTexttel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CompaniesEditTextfpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CompaniesEditTextadr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:inputType="textCapCharacters"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/fbccity"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="ΘΕΣΣΑΛΟΝΙΚΗ"
+
+            android:inputType="text|textAutoComplete|textCapCharacters|textCapWords"
+            android:maxLength="12"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEA1A1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CompaniesEditTextid"
+            app:layout_constraintVertical_bias="0.783" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="41dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="10dp"
+            android:text="Πόλη: "
+            android:textColor="#0C0909"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fbccity"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CompaniesEditTextid"
+            app:layout_constraintVertical_bias="0.74" />
+
+        <EditText
+            android:id="@+id/fbcrating"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10sp"
+            android:layout_marginBottom="24dp"
+            android:hint="5/10"
+            android:inputType="textCapCharacters"
+            android:maxLength="10"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEA1A1"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CompaniesEditTextid"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/fbcname"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10sp"
+            android:layout_marginTop="8dp"
+            android:hint="Public"
+            android:hyphenationFrequency="normal"
+            android:inputType="textCapCharacters"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEA1A1"
+            app:layout_constraintBottom_toTopOf="@+id/CompaniesEditTextid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.295"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.363" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="Όνομα"
+            android:textColor="#0C0909"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fbcname"
+            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.223" />
+
+        <TextView
+            android:id="@+id/textViewδδδ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="ID "
+            android:textColor="#0C0909"
+            app:layout_constraintBottom_toTopOf="@+id/CompaniesEditTextid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toEndOf="@+id/fbcname"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.59" />
+
+        <EditText
+            android:id="@+id/fbcid"
+
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="1"
+            android:inputType="textCapCharacters"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AEA1A1"
+            app:layout_constraintBottom_toTopOf="@+id/CompaniesEditTextid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toEndOf="@+id/textViewδδδ"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <RatingBar
+            android:id="@+id/ratingBarfbc"
+            style="@android:style/Widget.Material.Light.RatingBar.Indicator"
+            android:layout_width="184dp"
+            android:layout_height="42dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressTint="#EF9711"
+            android:stepSize="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.658"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.58000004" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Αξιολόγηση "
+            android:textColor="#0C0909"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/fbcrating"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CompaniesEditTextid"
+            app:layout_constraintVertical_bias="0.123" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bn_fbinsertc"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="10dp"
+
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#352929"
+        android:text="ΕΙΣΑΓΩΓΗ"
+        android:textColor="@color/white" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ClientsListIdfb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item android:title="ΔΙΑΝΟΜΗ">
+            <menu>
+                <group>
+        <item
+            android:id="@+id/nav_bookstore"
+            android:icon="@drawable/bookstore"
+            android:title="@string/bookstore" />
+
+        <item
+            android:id="@+id/nav_branch"
+            android:icon="@drawable/branch"
+            android:title="@string/branch" />
+
+        <item
+            android:id="@+id/nav_book"
+            android:icon="@drawable/book"
+            android:title="@string/book" />
+    </group>
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item android:title="SALES">
+            <menu>
+            <group>
+             <item
+            android:id="@+id/nav_FBItems"
+                 android:icon="@drawable/books_sale"
+            android:title="@string/menu_fbitems" />
+        <item
+            android:id="@+id/nav_FBClients"
+            android:icon="@drawable/clients"
+            android:title="@string/menu_fbclients" />
+        <item
+            android:id="@+id/nav_FBSales"
+            android:icon="@drawable/sell"
+            android:title="@string/menu_fbsales" />
+            </group>
+            </menu>
+        </item>
+    </group>
+</menu>

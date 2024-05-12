@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">BLUE BOOKS</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">ΑΠΟΣΥΝΔΕΣΗ</string>
+    <string-array name="range">
+        <item>1</item> <item>20</item>
+    </string-array>
+    <string name="menu_home">ΑΡΧΙΚΗ ΣΕΛΙΔΑ</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="book_text">Διαχείρηση Βιβλιοπωλείου</string>
+    <string name="book_subtext">Έυκολα, Γρήγορα και Αξιόπιστα!</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+
+
+    <string name="button_signup">button_sign_up</string>
+    <string name="button_login">button_login</string>
+
+    <string name="welcome">WELCOME,</string>
+    <string name="username_hint">Όνομα Χρήστη</string>
+
+    <string name="user_name">blue</string>
+    <string name="user_password">1998</string>
+    <string name="login_preference"> com.example.blue_books_loginPreference </string>
+    <string name="login_status"> com.example.blue_books_loginStatus</string>
+
+    <string name="bookstore">ΒΙΒΛΙΟΠΩΛΕΙΑ</string>
+    <string name="branch">ΥΠΟΚΑΤΑΣΤΗΜΑΤΑ</string>
+    <string name="book">ΒΙΒΛΙΑ ΚΑΙ ΔΙΑΝΟΜΗ</string>
+
+    <string name="menu_fbItems">BIBΛΙΑ ΠΡΟΣ ΠΩΛΗΣΗ</string>
+    <string name="menu_fbclients">ΠΕΛΑΤΕΣ</string>
+    <string name="menu_fbsales">ΠΩΛΗΣΕΙΣ</string>
+    <string name="menu_fbitems">BIBΛΙΑ ΠΡΟΣ ΠΩΛΗΣΗ</string>
+    <string name="menu_FBItems">BIBΛΙΑ ΠΡΟΣ ΠΩΛΗΣΗ</string>
+    <string name="pelates">ΠΕΛΑΤΕΣ</string>
+
+
+    <string-array name="items_category">
+        <item>ΞΕΝΟΓΛΩΣΣΑ</item>
+        <item> ΛΟΓΟΤΕΧΝΙΑ</item>
+        <item>ΕΠΙΣΤΗΜΕΣ </item><item> </item>
+        <item>ΠΑΙΔΙΚΑ </item>
+        <item>ΕΓΚΥΚΛΟΠΑΙΔΕΙΕΣ </item>
+        <item>ΤΕΧΝΟΛΟΓΙΑ </item>
+        <item> ΤΑΞΙΔΙΑ</item>
+        <item>ΚΟΜΙΚΣ </item>
+        <item>ΑΥΤΟΒΕΛΤΙΩΣΗ </item>
+        <item> ΛΕΞΙΚΑ</item>
+        <item>ΜΑΓΕΙΡΙΚΗ </item>
+        <item>ΨΥΧΟΛΟΓΙΑ </item>
+        <item>ΠΟΙΗΣΗ </item>
+        <item>ΥΓΕΙΑ </item>
+        <item> </item>
+
+    </string-array>
+    <string name="channel_name">Channel_name\n</string>
+    <string name="channel_description">channel_description</string>
+</resources>

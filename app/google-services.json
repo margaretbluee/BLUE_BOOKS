@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924424825629",
+    "project_id": "blue-books-841a3",
+    "storage_bucket": "blue-books-841a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924424825629:android:97b24d30ab68aad54b8ff4",
+        "android_client_info": {
+          "package_name": "com.example.blue_books"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMhMzRhABhyyZuFkJsbQ9N_Sd2pz6iWgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
